@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Booking With Ease!!</h1>
+    </header>
+    <nav>
+        <button class="btn flight" onclick="showSection('flights')">Flights</button>
+        <button class="btn train" onclick="showSection('trains')">Trains</button>
+        <button class="btn bus" onclick="showSection('buses')">Buses</button>
+        <button class="btn cab" onclick="showSection('cabs')">Cabs</button>
+    </nav>
+    <main>
+        <section id="flights" class="hidden">
+            <div class="form-container">
+                <h2><u>Book Flights With Us:</u></h2>
+                <form>
+                    <label for="flightFrom">From:</label>
+                    <select id="flightFrom">
+                        <option>Delhi</option>
+                        <option>Goa</option>
+                        <option>Bengaluru</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                    </select>
+                    <label for="flightTo">To:</label>
+                    <select id="flightTo">
+                        <option>Delhi</option>
+                        <option>Goa</option>
+                        <option>Bengaluru</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                    </select>
+                    <label for="flightDate">Date:</label>
+                    <input type="date" id="flightDate">
+                    <label for="passengerCount">No. Of Passengers:</label>
+                    <select id="passengerCount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <button type="submit">Book Now</button>
+                    <button type="back">Home</button>
+                </form>
+            </div>
+        </section>
+        <section id="trains" class="hidden">
+            <div class="form-container">
+                <h2><u>Book Trains With Us:</u></h2>
+                <form>
+                    <label for="trainFrom">From:</label>
+                    <select id="trainFrom">
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                        <option>Jammu</option>
+                        <option>Delhi</option>
+                    </select>
+                    <label for="trainTo">To:</label>
+                    <select id="trainTo">
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                        <option>Jammu</option>
+                        <option>Delhi</option>
+                    </select>
+                    <label for="trainDate">Date:</label>
+                    <input type="date" id="trainDate">
+                    <label for="passengerCount">No. Of Passengers:</label>
+                    <select id="passengerCount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <button type="submit">Book Now</button>
+                    <button type="back">Home</button>
+                </form>
+            </div>
+        </section>
+        <section id="buses" class="hidden">
+            <div class="form-container">
+                <h2><u>Book Buses With Us:</u></h2>
+                <form>
+                    <label for="busFrom">From:</label>
+                    <select id="busFrom">
+                        <option>Kolkata</option>
+                        <option>Puri</option>
+                        <option>Darjeeling</option>
+                        <option>Digha</option>
+                        <option>Barddhaman</option>
+                    </select>
+                    <label for="busTo">To:</label>
+                    <select id="busTo">
+                        <option>Kolkata</option>
+                        <option>Puri</option>
+                        <option>Darjeeling</option>
+                        <option>Digha</option>
+                        <option>Barddhaman</option>
+                    </select>
+                    <label for="busDate">Date:</label>
+                    <input type="date" id="busDate">
+                    <label for="passengerCount">No. Of Passengers:</label>
+                    <select id="passengerCount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <button type="submit">Book Now</button>
+                    <button type="back">Home</button>
+                </form>
+            </div>
+        </section>
+        <section id="cabs" class="hidden">
+            <div class="form-container">
+                <h2><u>Book Cabs With Us:</u></h2>
+                <form>
+                    <label for="cabFrom">From:</label>
+                    <select id="cabFrom">
+                        <option>Kolkata</option>
+                        <option>Puri</option>
+                        <option>Darjeeling</option>
+                        <option>Digha</option>
+                        <option>Barddhaman</option>
+                    </select>
+                    <label for="cabTo">To:</label>
+                    <select id="cabTo">
+                        <option>Kolkata</option>
+                        <option>Puri</option>
+                        <option>Darjeeling</option>
+                        <option>Digha</option>
+                        <option>Barddhaman</option>
+                    </select>
+                    <label for="cabDate">Date:</label>
+                    <input type="date" id="cabDate">
+                    <label for="cabDepartureTime">Departure Time:</label>
+                    <input type="time" id="cabDepartureTime">
+                    <label for="passengerCount">No. Of Passengers:</label>
+                    <select id="passengerCount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <button type="submit">Book Now</button>
+                    <button type="back">Home</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
